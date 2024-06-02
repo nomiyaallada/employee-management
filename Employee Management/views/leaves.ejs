@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Leaves</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"></head>
+<body>
+    <h1>All Leaves</h1>
+    <form action="/api/leave-sent">
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Reason Type</th>
+                <th>Reason</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% leaves.forEach(leave => { %>
+                <tr>
+                    <td><%= leave.name %></td>
+                    <td><%= leave.reasontype %></td>
+                    <td><%= leave.reason %></td>
+                    <td><%= leave.startdate.toDateString() %></td>
+                    <td><%= leave.enddate.toDateString() %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    </form>
+</body>
+</html>

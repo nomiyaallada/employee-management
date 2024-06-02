@@ -1,0 +1,96 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  
+  background-image: url('images/556.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color:rgba(58, 86, 99, 0.7);
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #133253;
+  color: white;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(135, 128, 128,0.7);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[readonly] {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 5px;
+  }
+
+  .navbar a {
+    margin-right: 10px;
+  }
+
+  
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management System</title>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/" class="oval-button">Home</a>
+            <div class="welcome">
+                <h2>Welcome to the Employeee Management System</h2>
+                
+            </div>
+        </div>
+        <br>
+        <div class="content">
+            <div class="button-container">
+                <a href="/api/emps" class="oval-button">View Employees</a>
+                <a href="/add-emp" class="oval-button">Add Employee</a>
+                <a href="#" onclick="showSearchForm()" class="oval-button">Search Employee</a>
+                <% if (typeof error !== 'undefined') { %>
+                    <p><%= error %></p> 
+                <% } %>
+                <a href="/api/leave" class="oval-button">View Leaves</a>
+            </div>
+            <div class="form-container" id="searchForm" style="display: none;">
+                <form action="/api/emps" method="GET">
+                    <input type="text" name="name" placeholder="Enter Employee name">
+                    <br/>
+                    <button type="submit" class="oval-button">Search</button>
+                </form>
+            </div>
+
+           
+
+            <div class="welcome">
+                
+                <h3>Use the buttons above to view and manage Employee records.</h3>
+            </div>
+        </div>
+    
+ 
+        <% if (typeof message !== 'undefined') { %>
+            <p><%= message %></p>
+        <% } %>
+    </div>
+ 
+    <script>
+    function showSearchForm() {
+        var form = document.getElementById('searchForm');
+        if (form.style.display === 'none') {
+            form.style.display = 'block';
+        } else {
+            form.style.display = 'none';
+        }
+    }
+    </script>
+    
+</body>
+</html>

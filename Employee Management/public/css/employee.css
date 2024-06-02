@@ -1,0 +1,92 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-image: url('images/3(1).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 20px;
+
+  color: #333;
+}
+
+.form-container {
+  max-width: 1200px;
+  background-color:rgb(114,183,212,0.7);
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #7c8b9b;
+  color: white;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #1e4b7b;
+  color: white;
+}
+
+tr:hover {
+  background-color: #ace5f7;
+}
+
+/* Delete Link Styles */
+a.delete-link {
+  color: red;
+  cursor: pointer;
+}
+
+a.delete-link:hover {
+  text-decoration: underline;
+}
+button {
+  background-color: #82b1e4;
+  border: none;
+  color: rgb(20, 19, 19);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #6990bb;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <link rel="stylesheet" type="text/css" href="/css/add-emp.css">
+    </div>
+    <form action="/api/emps" method="post" id="add-emp-form">
+        <label for="id">Id:</label>
+        <input type="number" id="id" name="id" required>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br>
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" required>
+        <br>
+        <label for="joiningdate">Joining Date:</label>
+        <input type="date" id="joiningdate" name="joiningdate" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <br>
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch">
+        <option value="cse">CSE</option>
+        <option value="ece">ECE</option>
+        <option value="it">IT</option>
+        <option value="aiml">AIML</option>
+        <option value="aids">AIDS</option>
+        <option value="iot">IOT</option>
+        <option value="mech">MECH</option>
+        <option value="civil">CIVIL</option>
+        <option value="eee">EEE</option>
+        </select>
+        <br>
+        <label for="phoneno">Phone no:</label>
+        <input type="number" id="phoneno" name="phoneno" required>
+        <br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+        <option value="male">MALE</option>
+        <option value="female">FEMALE</option>
+        <br>
+        <input type="hidden" id="leavecount" name="leavecount"  value="15" >
+        <br>
+        <button type="submit">Add Employee</button>
+    </form>
+    
+</body>
+</html>
